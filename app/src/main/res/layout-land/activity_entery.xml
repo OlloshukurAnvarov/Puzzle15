@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Entery">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/wooden_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/wooden_board">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/puzzle_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="#CDFFFFFF"
+                            android:fontFamily="@font/puzzle_text_font"
+                            android:textSize="100sp"
+                            android:onClick="puzzleTextClicks"/>
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/mk_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="32dp"
+                            android:onClick="mkLogoClicks"
+                            android:src="@drawable/mortal_kombat_logo"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/edition_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/mortal_kombat_edition"
+                            android:textColor="#CBFFFFFF"
+                            android:fontFamily="@font/puzzle_text_font"
+                            android:textSize="48sp"/>
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:visibility="gone"
+                            android:id="@+id/edition_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pi5_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pi5"
+                        android:textSize="28sp"
+                        android:layout_marginHorizontal="32dp"
+                        android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/constantia"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom|right"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/circle_wooden"
+                android:layout_marginTop="16dp"
+                android:padding="11dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/start_button_clickable_effect"
+                    android:onClick="startClicks"
+                    android:src="@drawable/play_circle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/circle_wooden"
+                        android:padding="16dp"
+                        android:foreground="@drawable/clickable_effect"
+                        android:onClick="exitClicks">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arrow_back" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="16dp"
+                        android:onClick="infoClicks"
+                        android:foreground="@drawable/clickable_effect"
+                        android:background="@drawable/circle_wooden">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/info_i" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Puzzle 15</string>
+    <string name="well_done">Well-done</string>
+    <string name="you_win">You win!</string>
+    <string name="replay">Replay</string>
+    <string name="warning">Warning!</string>
+    <string name="alert_data">Your game score will be lost</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="step">Step</string>
+    <string name="time">Time</string>
+    <string name="pi5">π5</string>
+    <string name="mortal_kombat_edition">Mortal Kombat Edition</string>
+</resources>
